@@ -1,4 +1,5 @@
 import { generateSEOMetadata, generateStructuredData } from "@/components/Metadata";
+import MouseFollow from "@/components/MouseFollow";
 
 export const metadata = generateSEOMetadata({
   contentMetadata: {
@@ -27,10 +28,9 @@ export default function Home() {
               url: '',
           }
         })}
-        <div className="bg-black w-full h-screen flex justify-center items-center">
-            <h1 className="text-4xl md:text-7xl text-white font-semibold drop-shadow-2xl">
-              HomePage
-            </h1>
+          <MouseFollow />
+        <div className="w-full h-screen flex justify-center items-center bg-[#fefefe] z-50">
+
         </div>
     </>
   );

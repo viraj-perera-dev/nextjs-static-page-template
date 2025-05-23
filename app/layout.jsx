@@ -2,10 +2,7 @@ import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LenisProvider from '@/components/LenisProvider';
-import Scrollbar from '@/components/ScrollBar';
-import ScrollManager from '@/components/ScrollManager';
 import AOSInit from '@/components/AOSInit';
-import { DictionaryProvider } from '@/context/DictionaryContext';
 import { generateSEOMetadata } from "@/components/Metadata";
 
 export const metadata = generateSEOMetadata({
@@ -35,14 +32,12 @@ export default function RootLayout({children,}) {
   return (
     <html lang="it">
       <body className={""}>
-      <DictionaryProvider>
         <LenisProvider>
           <AOSInit />
-          <Navbar/>
+          {/* <Navbar/> */}
           {children}
           <Footer/>
         </LenisProvider>
-      </DictionaryProvider>
       </body>
     </html>
   );
