@@ -108,5 +108,5 @@ If you find this project useful and would like to support its development, consi
 
 ## 📜 License
 
-[MIT](https://github.com/viraj-perera-development/nextjs-static-page-template/blob/main/LICENSE)
+[MIT](https://github.com/viraj-perera-dev/nextjs-static-page-template/blob/main/LICENSE)
 
